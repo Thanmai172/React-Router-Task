@@ -1,3 +1,4 @@
+/* App-wide styles */
 .App {
   text-align: center;
 }
@@ -35,4 +36,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Navigation styles */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0;
+  color: #007bff; /* Optional: Change text color on hover */
 }
